@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+  <style>
+    body {
+      background-color: orange;
+    }
+    form {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 5px;
+    }
+
+    input[type="checkbox"] {
+      margin-top: 10px;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    h1 {
+    text-align: center;
+    background-color: rgb(126, 83, 27);
+    padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulario de contacto</h1>
+  <form action="" method="GET">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" maxlength="40" required>
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" maxlength="40" required>
+
+    <label for="sexo">Sexo:</label>
+    <select id="sexo" name="sexo" required>
+      <option value="hombre">Hombre</option>
+      <option value="mujer">Mujer</option>
+    </select>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="novedades">Deseo recibir novedades y ofertas:</label>
+    <input type="checkbox" id="novedades" name="novedades" checked>
+
+    <label for="condiciones">He leído y acepto las condiciones generales del programa y la normativa sobre protección de datos:</label>
+    <input type="checkbox" id="condiciones" name="condiciones" required>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
